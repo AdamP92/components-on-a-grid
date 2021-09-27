@@ -1,8 +1,9 @@
 html {
   box-sizing: border-box;
-  font-family: "Patua One", sans-serif;
+  font-family: Georgia, serif;
   line-height: 1.5;
   background-color: #f2f1ed;
+  margin: 1rem;
 }
 
 *,
@@ -21,9 +22,9 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 27.5rem;
-  margin: 1rem;
-  grid-template-areas:
-  "header" "main"
+  grid-template-areas: "header" "main";
+  row-gap: 1rem;
+  margin: 0;
 }
 
 header {
@@ -56,6 +57,7 @@ ul {
 
 li {
   display: inline-block;
+  margin-top: 1rem;
 }
 
 a {
@@ -76,17 +78,15 @@ main {
 }
 
 h2 {
+  font-family: "Patua One", sans-serif;
   color: #30658d;
-  margin: 1rem 0rem 0rem 0rem;
+  margin: 1rem;
 }
 
 p {
-  font-family: "Georgia", serif;
+  font-family: Georgia, serif;
   margin: 0;
-}
-
-figure {
-  margin: 1rem 0rem;
+  display: flex;
 }
 
 .one {
@@ -97,4 +97,8 @@ figure {
 .two {
   grid-column: 2;
   grid-row: 1;
+}
+
+figure {
+  margin: 0;
 }

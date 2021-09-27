@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
-  font: normal 100%/1.3 "Patua One";
+  font: normal 100%/1.3 "Patua One", sans-serif;
+  background-color: #f2f1ed;
 }
 
 *,
@@ -52,7 +53,12 @@ li {
 }
 
 a {
-  text-decoration: none;
+  font-size: 2rem;
+  text-decoration: underline;
   color: #fff;
   padding: 0.5rem;
+}
+
+h2 {
+  color: #30658d;
 }

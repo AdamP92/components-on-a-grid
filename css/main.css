@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  font: normal 100%/1.3 "Patua One";
 }
 
 *,
@@ -12,12 +13,26 @@ img {
   width: 100%;
 }
 
+body {
+  margin: 1rem;
+}
+
 header {
   /* Remove the <header> box and allow us to directly apply header’s children to the grid. */
   display: contents;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+}
+
+h1 {
+  grid-column: 1;
+  grid-row: 1;
+  z-index: 10;
+  width: 14rem;
+  align-self: flex-end;
+  margin: 0;
+  padding: 1rem;
 }
 
 img {
@@ -30,4 +45,14 @@ nav {
   grid-column: 2;
   grid-row: 1;
   z-index: 10;
+}
+
+li {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5rem;
 }
